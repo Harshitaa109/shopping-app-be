@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(
-    "mongodb+srv://sawanisaxena:sawani3007@cluster0.aposb1q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+  .connect(process.env.MONGO_DB_URL,
     {
       dbName: "day17",
     }
